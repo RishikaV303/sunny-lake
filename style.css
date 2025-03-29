@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: "Epilogue", sans-serif;
+}
+/* nav start */
+header{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background: url("./images_lake/banner.webp");
+    background-size: cover;
+    background-position: center;
+}
+header .wrapper{
+    width: 90%;
+    height: 80%;
+   
+    /* background-color: cadetblue; */
+}
+nav{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+}
+nav .wrapper{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    width: 50%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+/* nav end */
+
+
+/* banner start */
+header .wrapper .banner{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+}
+header .wrapper .banner .content-one{
+    width: 40%;
+    height: 90%;
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 30px;
+}
+header .wrapper .banner .content-one h1{
+    width: 70%;
+    font-size: 64px;
+    color: white;
+}
+header .wrapper .banner .content-one a button{
+    width: 115px;
+    height: 49px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 2px;
+    font-size: 18px;
+}
+header .wrapper .banner .content-one a button:hover{
+    background-color: white;
+    color: black;
+}
+header .wrapper .banner .content-two{
+    width: 40%;
+    height: 90%;
+    /* background-color: chocolate; */
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+header .wrapper .banner .content-two p{
+    width: 90%;
+    color: white;
+    font-size: 18px;
+    line-height: 22px;
+    /* letter-spacing: 1px; */
+
+}
+/* banner end */
+/* section one */
+#section-one{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#section-one .wrapper{
+    width: 90%;
+    height: 80%;
+    /* height: auto; */
+    display: flex;
+    align-items: center;
+    /* background-color: aqua; */
+}
+#section-one .wrapper .content{
+    width: 40%;
+    height: auto;
+    color: #262626;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 20px;
+}
+#section-one .wrapper .content h1{
+    width: 70%;
+    font-size: 48px;
+}
+#section-one .wrapper .content p{
+    width: 85%;
+    font-size: 18px;
+    line-height: 25px;
+}
+#section-one .wrapper .moving-images{
+    width: 60%;
+    height: 100%;
+    
+}
+/* #section-one .wrapper .moving-images img{
+    width: 100%;
+    height: 100%;
+} */
+#section-one .wrapper .moving-images .sticky-image{
+    position: relative;
+     /* visibility: hidden; */
+}
+#section-one .wrapper .moving-images .sticky-image img{
+    width: 100%;
+    height: 100%;
+    position: sticky;
+    top: 0px;
+}
+/* section one end */
+/* section two */
+#section-two{
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#section-two .wrapper{
+    width: 90%;
+    height: 80%;
+}
+#section-two .wrapper .heading{
+    width: 55%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    font-size: 38px;
+}
+#section-two .wrapper .image-content{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#section-two .wrapper .image-content .card-one{
+    width: 30%;
+    height:100%;
+    background: url("./images_lake/card-one.webp");
+    padding-bottom: 30px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    
+}
+#section-two .wrapper .image-content .card-one .wrap{
+    width: 90%;
+    height: 30%;
+    background-color: aqua;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    gap: 30px;
+}
+/* #section-two .wrapper .image-content .card-one:hover{
+    display: block;
+} */
+#section-two .wrapper .image-content .card-one .bt-wrap{
+    width: 115px;
+    height: 49px;
+    /* background-color: red; */
+    
+}
+#section-two .wrapper .image-content .card-one .bt-wrap:hover{
+    /* width: 115px;
+    height: 49px; */
+    /* display: block; */
+}
+#section-two .wrapper .image-content .card-one .bt-wrap button{
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+        border-radius: 2px;
+        font-size: 18px;
+        /* display: none; */
+        margin-top: 100px;
+}
+ #section-two .wrapper .image-content .card-one button:hover{
+        background-color: white;
+        color: black;
+}  
+
+
+#section-two .wrapper .image-content .card-two{
+    width: 30%;
+    height:100%;
+    background: url("./images_lake/card-two.webp");
+    padding-bottom: 30px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    gap: 30px;
+}
+#section-two .wrapper .image-content .card-two button{
+    width: 115px;
+    height: 49px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 2px;
+    font-size: 18px;
+    display: none;
+}
+#section-two .wrapper .image-content .card-two button:hover{
+    background-color: white;
+    color: black;
+
+} 
+#section-two .wrapper .image-content .card-three{
+    width: 30%;
+    height:100%;
+    background: url("./images_lake/card-three.webp");
+    padding-bottom: 30px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    gap: 30px;
+}
+#section-two .wrapper .image-content .card-three button{
+    width: 115px;
+    height: 49px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 2px;
+    font-size: 18px;
+    display: none;
+}
+#section-two .wrapper .image-content .card-three button:hover{
+    background-color: white;
+    color: black;
+   
+} 
+
+/* section two end */
