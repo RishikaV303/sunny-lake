@@ -217,21 +217,20 @@ header .wrapper .banner .content-two p{
     justify-content: start;
     align-items: center;
     gap: 30px;
-    position: relative;
+    position: absolute;
     overflow: hidden;
+    
 }
 #section-two .wrapper .image-content .card-one:hover .bt-wrap{
     display: block;
     bottom: 0px;
+    
 }
 #section-two .wrapper .image-content .card-one .bt-wrap{
     width: 115px;
     height: 49px;
-    position: absolute;
-    bottom: -100%;
-    /* display: none; */
-    transition-duration: 0.7s;
-    /* background-color: red; */
+ 
+    
     
 }
 #section-two .wrapper .image-content .card-one .bt-wrap:hover{
@@ -281,7 +280,6 @@ header .wrapper .banner .content-two p{
     border: 1px solid white;
     border-radius: 2px;
     font-size: 18px;
-    display: none;
 }
 #section-two .wrapper .image-content .card-two button:hover{
     background-color: white;
@@ -311,7 +309,7 @@ header .wrapper .banner .content-two p{
     border: 1px solid white;
     border-radius: 2px;
     font-size: 18px;
-    display: none;
+
 }
 #section-two .wrapper .image-content .card-three button:hover{
     background-color: white;
@@ -337,11 +335,16 @@ header .wrapper .banner .content-two p{
 #section-three .wrapper .image{
     width: 75%;
     height: 100;
+    overflow: hidden;
     
 }
 #section-three .wrapper .image img{
     width: 100%;
     height: 100%;
+    transition: transform 0.4s ease-in-out;
+}
+#section-three .wrapper .image:hover img{
+    transform: scale(1.02);
 }
 
 #section-three .wrapper .content{
@@ -418,14 +421,17 @@ header .wrapper .banner .content-two p{
 }
 #food-section .wrapper .image{
     width: 75%;
-    height: 100;
-    
+    height: 100%;
+    overflow: hidden;
 }
 #food-section .wrapper .image img{
     width: 100%;
     height: 100%;
+    transition: transform 0.4s ease-in-out;
 }
-
+#food-section .wrapper .image:hover img{
+    transform: scale(1.02);
+}
 #food-section .wrapper .content{
     width: 50%;
     height: auto;
@@ -484,6 +490,58 @@ header .wrapper .banner .content-two p{
     transition: 0.4s ease-in-out;
 }
 /* food section end */
+/* post section */
+#post-section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#post-section .wrapper{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+#post-section .wrapper .heading{
+    width: 55%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    color: #262626;
+}
+
+#post-section .wrapper .post-images{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#post-section .wrapper .post-images .post{
+    width: 40%;
+    height: 60%;
+}
+#post-section .wrapper .post-images .post img{
+    width: 100%;
+    height: 100%;
+}
+#post-section .wrapper .post-images .posts{
+    width: 30%;
+    height: 80%;
+}
+#post-section .wrapper .post-images .posts img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/* post section end*/
 /* small cards start */
 #small-cards{
     width: 100%;
@@ -671,7 +729,6 @@ header .wrapper .banner .content-two p{
 #final-cards .wrapper{
     width: 95%;
     height: 90%;
-    background-color: #2F5B3C;
 }
 #final-cards .wrapper .heading{
     width: 55%;
@@ -687,7 +744,6 @@ header .wrapper .banner .content-two p{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: aquamarine;
 
 }
 #final-cards .wrapper .cards a{
@@ -701,23 +757,28 @@ header .wrapper .banner .content-two p{
     border-radius: 2px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
 }
 
 #final-cards .wrapper .cards a .small-card-one .image-one{
     width: 100%;
     height: 70%;
+    overflow: hidden;
 }
 #final-cards .wrapper .cards a .small-card-one .image-one img{
     width: 100%;
     height: 100%;
+    transition: transform 0.4s ease-in-out;
+}
+#final-cards .wrapper .cards a .small-card-one .image-one:hover img{
+    transform: scale(1.02);
 }
 #final-cards .wrapper .cards a .small-card-one .content{
     width: 100%;
     height: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    /* justify-content: end; */
     gap: 10px;
 }
 #final-cards .wrapper .cards a .small-card-one .content h1{
@@ -733,7 +794,7 @@ header .wrapper .banner .content-two p{
 /* footer */
 footer{
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -745,7 +806,6 @@ footer .wrapper{
 footer .wrapper .links{
     width: 80%;
     height: 70%;
-    background-color: #c6c0c0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -757,18 +817,73 @@ footer .wrapper .links a{
     text-decoration: none;
     color: #262626;
 }
+footer .wrapper .links li a:hover{
+    color: #2F5B3C;
+
+}
 footer .wrapper .links .to-do{
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-footner .wrapper .links .to-do a h2{
+footer .wrapper .links .to-do a h2{
+    font-weight: 500;
 
 }
 footer .wrapper .links .to-do ul{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 
+}
+footer .wrapper .privacy-policy{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #262626;
+}
+footer .wrapper .privacy-policy a{
+    text-decoration: none;
+    color: #262626;
+}
+footer .wrapper .privacy-policy a:hover{
+    color: #2F5B3C;
+}
+footer .wrapper .privacy-policy .icons{
+    width: 20%;
+    height: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #183321;
+    font-size: 24px;
+}
+footer .wrapper .privacy-policy .icons i:hover{
+    cursor: pointer;
+    padding-bottom: 10px;
+    transition: 0.2s cubic-bezier(0.6, 0.37, 1, 1);
+}
+footer .wrapper .last{
+    width: 30%;
+    height: 20%;
+}
+footer .wrapper .last ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .wrapper .last ul li{
+    list-style: none;
+}
+footer .wrapper .last ul li a{
+    text-decoration: none;
+    color: #262626;
+}
+footer .wrapper .last ul li a:hover{
+    color: #2F5B3C;
 }
 /* footer end */
