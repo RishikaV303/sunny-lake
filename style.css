@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
-*{
+
+* {
     padding: 0%;
     margin: 0%;
     font-family: "Epilogue", sans-serif;
 }
+
 /* nav start */
 
-nav{
+nav {
     width: 100%;
     height: 10vh;
     display: flex;
@@ -17,7 +19,8 @@ nav{
     background-color: white;
     z-index: 1000;
 }
-nav .wrapper{
+
+nav .wrapper {
     width: 95%;
     height: 100%;
     display: flex;
@@ -25,24 +28,27 @@ nav .wrapper{
     align-items: center;
 }
 
-nav ul{
+nav ul {
     width: 50%;
     height: 70%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
-nav ul li{
+
+nav ul li {
     list-style: none;
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
     color: black;
     font-size: 18px;
 }
+
 /* nav end */
 /* banner start */
-header{
+header {
     width: 100%;
     height: 90vh;
     display: flex;
@@ -51,17 +57,20 @@ header{
     align-items: center;
     position: relative;
 }
-header .video{
+
+header .video {
     height: 100%;
     width: 100%;
-    
+
 }
-header .video video{
+
+header .video video {
     height: 100%;
     width: 100%;
-    object-fit:inherit;
+    object-fit: inherit;
 }
-header .wrapper{
+
+header .wrapper {
     width: 95%;
     height: 80%;
     position: absolute;
@@ -69,13 +78,14 @@ header .wrapper{
     /* background-color: cadetblue; */
 }
 
-header .wrapper .banner{
+header .wrapper .banner {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-between;
 }
-header .wrapper .banner .content-one{
+
+header .wrapper .banner .content-one {
     width: 40%;
     height: 90%;
     /* background-color: blueviolet; */
@@ -84,12 +94,14 @@ header .wrapper .banner .content-one{
     justify-content: end;
     gap: 30px;
 }
-header .wrapper .banner .content-one h1{
+
+header .wrapper .banner .content-one h1 {
     width: 70%;
     font-size: 64px;
     color: white;
 }
-header .wrapper .banner .content-one a button{
+
+header .wrapper .banner .content-one a button {
     width: 115px;
     height: 49px;
     background-color: transparent;
@@ -98,12 +110,14 @@ header .wrapper .banner .content-one a button{
     border-radius: 2px;
     font-size: 18px;
 }
-header .wrapper .banner .content-one a button:hover{
+
+header .wrapper .banner .content-one a button:hover {
     background-color: white;
     color: black;
     transition: 0.4s ease-in-out;
 }
-header .wrapper .banner .content-two{
+
+header .wrapper .banner .content-two {
     width: 40%;
     height: 90%;
     /* background-color: chocolate; */
@@ -111,7 +125,8 @@ header .wrapper .banner .content-two{
     flex-direction: column;
     justify-content: end;
 }
-header .wrapper .banner .content-two p{
+
+header .wrapper .banner .content-two p {
     width: 90%;
     color: white;
     font-size: 18px;
@@ -120,18 +135,21 @@ header .wrapper .banner .content-two p{
     /* letter-spacing: 1px; */
 
 }
+
 /* banner end */
 /* section one */
-#section-one{
+#section-one {
     width: 100%;
     height: 90vh;
+    margin: 20px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #F4F3F1;
 }
-#section-one .wrapper{
+
+#section-one .wrapper {
     width: 95%;
     height: 80%;
     /* height: auto; */
@@ -141,7 +159,8 @@ header .wrapper .banner .content-two p{
     top: 0;
     /* background-color: aqua; */
 }
-#section-one .wrapper .content{
+
+#section-one .wrapper .content {
     width: 40%;
     height: auto;
     color: #262626;
@@ -150,47 +169,38 @@ header .wrapper .banner .content-two p{
     justify-content: end;
     gap: 20px;
 }
-#section-one .wrapper .content h1{
+
+#section-one .wrapper .content h1 {
     width: 70%;
     font-size: 48px;
 }
-#section-one .wrapper .content p{
+
+#section-one .wrapper .content p {
     width: 85%;
     font-size: 18px;
     line-height: 25px;
 }
-#section-one .wrapper .moving-images{
-    width: 60%;
+
+#section-one .wrapper .image {
+    width: 75%;
     height: 100%;
-    position: relative;
+    overflow: hidden;
 
 }
 
-#section-one .wrapper .moving-images .sticky-image{
-    position: relative;
-
-}
-#section-one .wrapper .moving-images .sticky-image img{
+#section-one .wrapper .image img {
     width: 100%;
     height: 100%;
-    position: sticky;
-    top: 0;
-    object-fit: cover;
-    transition: transform 0.5s ease-out;
+    transition: transform 0.4s ease-in-out;
 }
-#section-one .wrapper .moving-images .sticky-image:nth-child(2) img{
-    position: sticky;
-    top: -10;
-    z-index: 2;
+
+#section-one .wrapper .image:hover img {
+    transform: scale(1.05);
 }
-#section-one .wrapper .moving-images .sticky-image:nth-child(3) img{
-    position: sticky;
-    top: 0;
-    z-index: 3;
-}
+
 /* section one end */
 /* section two */
-#section-two{
+#section-two {
     width: 100%;
     height: 120vh;
     display: flex;
@@ -199,33 +209,39 @@ header .wrapper .banner .content-two p{
     justify-content: center;
     background-color: #F4F3F1;
 }
-#section-two .wrapper{
+
+#section-two .wrapper {
     width: 95%;
     height: 80%;
 }
-#section-two .wrapper .heading{
+
+#section-two .wrapper .heading {
     width: 55%;
     height: 30%;
     display: flex;
     align-items: center;
     font-size: 38px;
 }
-#section-two .wrapper .image-content{
+
+#section-two .wrapper .image-content {
     width: 100%;
     height: 80%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    
+
 }
+
 /* card one */
-#section-two .wrapper .image-content .wrap{
+#section-two .wrapper .image-content .wrap {
     width: 30%;
     height: 100%;
     overflow: hidden;
 
 }
-#section-two .wrapper .image-content .card-one{
+
+#section-two .wrapper .image-content .card-one {
     width: 100%;
     height: 100%;
     background: url("./images_lake/card-one.webp");
@@ -237,7 +253,7 @@ header .wrapper .banner .content-two p{
     transition: transform 0.4s ease-in-out;
     position: relative;
     overflow: hidden;
-  
+
 }
 
 #section-two .wrapper .image-content .card-one::after {
@@ -249,14 +265,15 @@ header .wrapper .banner .content-two p{
     height: 100%;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0));
 }
-#section-two .wrapper .image-content .card-one:hover{
+
+#section-two .wrapper .image-content .card-one:hover {
     transform: scale(1.01);
     cursor: pointer;
 }
 
 
 /* wrap */
-#section-two .wrapper .image-content .card-one .wrap{
+#section-two .wrapper .image-content .card-one .wrap {
     width: 90%;
     height: 30%;
     display: flex;
@@ -265,13 +282,15 @@ header .wrapper .banner .content-two p{
     justify-content: space-evenly;
     transition: transform 0.3s ease-in-out;
 }
-#section-two .wrapper .image-content .card-one .wrap h1{
+
+#section-two .wrapper .image-content .card-one .wrap h1 {
     color: white;
     font-size: 30px;
     margin-bottom: 10px;
     transition: transform 0.3s ease-in-out;
 }
-#section-two .wrapper .image-content .card-one .wrap button{
+
+#section-two .wrapper .image-content .card-one .wrap button {
     width: 115px;
     height: 49px;
     background-color: transparent;
@@ -283,20 +302,24 @@ header .wrapper .banner .content-two p{
     transform: translateY(20px);
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
-#section-two .wrapper .image-content .card-one:hover .wrap{
+
+#section-two .wrapper .image-content .card-one:hover .wrap {
     transform: translateY(-20px);
 }
-#section-two .wrapper .image-content .card-one:hover button{
+
+#section-two .wrapper .image-content .card-one:hover button {
     opacity: 1;
     transform: translateY(-20px);
 }
-#section-two .wrapper .image-content .card-one .wrap button:hover{
+
+#section-two .wrapper .image-content .card-one .wrap button:hover {
     background-color: white;
     color: black;
-    transition: 0.4s ease-in-out; 
+    transition: 0.4s ease-in-out;
 }
+
 /* card two start */
-#section-two .wrapper .image-content .card-two{
+#section-two .wrapper .image-content .card-two {
     width: 100%;
     height: 100%;
     background: url("./images_lake/card-two.webp");
@@ -308,7 +331,7 @@ header .wrapper .banner .content-two p{
     transition: transform 0.4s ease-in-out;
     position: relative;
     overflow: hidden;
-  
+
 }
 
 #section-two .wrapper .image-content .card-two::after {
@@ -320,14 +343,15 @@ header .wrapper .banner .content-two p{
     height: 100%;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0));
 }
-#section-two .wrapper .image-content .card-two:hover{
+
+#section-two .wrapper .image-content .card-two:hover {
     transform: scale(1.01);
     cursor: pointer;
 }
 
 
 /* wrap */
-#section-two .wrapper .image-content .card-two .wrap{
+#section-two .wrapper .image-content .card-two .wrap {
     width: 90%;
     height: 30%;
     display: flex;
@@ -336,13 +360,15 @@ header .wrapper .banner .content-two p{
     justify-content: space-evenly;
     transition: transform 0.3s ease-in-out;
 }
-#section-two .wrapper .image-content .card-two .wrap h1{
+
+#section-two .wrapper .image-content .card-two .wrap h1 {
     color: white;
     font-size: 30px;
     margin-bottom: 10px;
     transition: transform 0.3s ease-in-out;
 }
-#section-two .wrapper .image-content .card-two .wrap button{
+
+#section-two .wrapper .image-content .card-two .wrap button {
     width: 115px;
     height: 49px;
     background-color: transparent;
@@ -354,22 +380,26 @@ header .wrapper .banner .content-two p{
     transform: translateY(20px);
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
-#section-two .wrapper .image-content .card-two:hover .wrap{
+
+#section-two .wrapper .image-content .card-two:hover .wrap {
     transform: translateY(-20px);
 }
-#section-two .wrapper .image-content .card-two:hover button{
+
+#section-two .wrapper .image-content .card-two:hover button {
     opacity: 100;
     transform: translateY(-20px);
 }
-#section-two .wrapper .image-content .card-two .wrap button:hover{
+
+#section-two .wrapper .image-content .card-two .wrap button:hover {
     background-color: white;
     color: black;
-    transition: 0.4s ease-in-out; 
+    transition: 0.4s ease-in-out;
 }
+
 /* card two end */
 
 /* card three start */
-#section-two .wrapper .image-content .card-three{
+#section-two .wrapper .image-content .card-three {
     width: 100%;
     height: 100%;
     background: url("./images_lake/card-three.webp");
@@ -381,7 +411,7 @@ header .wrapper .banner .content-two p{
     transition: transform 0.4s ease-in-out;
     position: relative;
     overflow: hidden;
-  
+
 }
 
 #section-two .wrapper .image-content .card-three::after {
@@ -393,14 +423,15 @@ header .wrapper .banner .content-two p{
     height: 100%;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0));
 }
-#section-two .wrapper .image-content .card-three:hover{
+
+#section-two .wrapper .image-content .card-three:hover {
     transform: scale(1.01);
     cursor: pointer;
 }
 
 
 /* wrap */
-#section-two .wrapper .image-content .card-three .wrap{
+#section-two .wrapper .image-content .card-three .wrap {
     width: 90%;
     height: 30%;
     display: flex;
@@ -409,13 +440,15 @@ header .wrapper .banner .content-two p{
     justify-content: space-evenly;
     transition: transform 0.3s ease-in-out;
 }
-#section-two .wrapper .image-content .card-three .wrap h1{
+
+#section-two .wrapper .image-content .card-three .wrap h1 {
     color: white;
     font-size: 30px;
     margin-bottom: 10px;
     transition: transform 0.3s ease-in-out;
 }
-#section-two .wrapper .image-content .card-three .wrap button{
+
+#section-two .wrapper .image-content .card-three .wrap button {
     width: 115px;
     height: 49px;
     background-color: transparent;
@@ -427,88 +460,103 @@ header .wrapper .banner .content-two p{
     transform: translateY(20px);
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
-#section-two .wrapper .image-content .card-three:hover .wrap{
+
+#section-two .wrapper .image-content .card-three:hover .wrap {
     transform: translateY(-20px);
 }
-#section-two .wrapper .image-content .card-three:hover button{
+
+#section-two .wrapper .image-content .card-three:hover button {
     opacity: 1;
     transform: translateY(-20px);
 }
-#section-two .wrapper .image-content .card-three .wrap button:hover{
+
+#section-two .wrapper .image-content .card-three .wrap button:hover {
     background-color: white;
     color: black;
-    transition: 0.4s ease-in-out; 
+    transition: 0.4s ease-in-out;
 }
+
 /* card three end */
 /* section two end */
 /* section three start */
-#section-three{
+#section-three {
     width: 100%;
-    height: 120vh;
+    min-height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #F4F3F1;
-}
-#section-three .wrapper{
-    width: 95%;
-    height: 70%;
-    display: flex;
-}
-#section-three .wrapper .image{
-    width: 75%;
-    height: 100;
-    overflow: hidden;
-    
-}
-#section-three .wrapper .image img{
-    width: 100%;
-    height: 100%;
-    transition: transform 0.4s ease-in-out;
-}
-#section-three .wrapper .image:hover img{
-    transform: scale(1.02);
+    padding: 40px 0;
 }
 
-#section-three .wrapper .content{
+#section-three .wrapper {
+    width: 95%;
+    height: auto;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+#section-three .wrapper .image {
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+#section-three .wrapper .image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease-in-out;
+}
+
+#section-three .wrapper .image:hover img {
+    transform: scale(1.05);
+}
+
+#section-three .wrapper .content {
     width: 50%;
     height: auto;
     color: #262626;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     align-items: end;
     /* gap: 20px; */
     /* background-color: chocolate; */
-    
+
 }
-#section-three .wrapper .content .cont-wrap{
+
+#section-three .wrapper .content .cont-wrap {
     width: 90%;
-    height: 90%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 30px;
 }
-#section-three .wrapper .content .head-wrap{
+
+#section-three .wrapper .content .head-wrap {
     width: 100%;
     font-size: 34px;
 }
-#section-three .wrapper .content .para-wrap{
+
+#section-three .wrapper .content .para-wrap {
     width: 90%;
     height: auto;
     text-align: left;
     font-size: 16px;
     line-height: 25px;
 }
-#section-three .wrapper .content a{
+
+#section-three .wrapper .content a {
     text-decoration: none;
     color: #262626;
-   
+
 }
 
- #section-three .wrapper .content .cont-wrap button{
+#section-three .wrapper .content .cont-wrap button {
     width: 150px;
     height: 60px;
     background-color: transparent;
@@ -521,15 +569,17 @@ header .wrapper .banner .content-two p{
     align-items: center;
     gap: 10%;
 }
- #section-three .wrapper .content a button:hover{
+
+#section-three .wrapper .content a button:hover {
     background-color: #2F5B3C;
     border: 1px solid #2F5B3C;
     color: rgb(255, 255, 255);
     transition: 0.4s ease-in-out;
 }
+
 /* section three end */
 /* food section start */
-#food-section{
+#food-section {
     width: 100%;
     height: 120vh;
     display: flex;
@@ -537,25 +587,30 @@ header .wrapper .banner .content-two p{
     align-items: center;
     background-color: #F4F3F1;
 }
-#food-section .wrapper{
+
+#food-section .wrapper {
     width: 95%;
     height: 70%;
     display: flex;
 }
-#food-section .wrapper .image{
+
+#food-section .wrapper .image {
     width: 75%;
     height: 100%;
     overflow: hidden;
 }
-#food-section .wrapper .image img{
+
+#food-section .wrapper .image img {
     width: 100%;
     height: 100%;
     transition: transform 0.4s ease-in-out;
 }
-#food-section .wrapper .image:hover img{
+
+#food-section .wrapper .image:hover img {
     transform: scale(1.02);
 }
-#food-section .wrapper .content{
+
+#food-section .wrapper .content {
     width: 50%;
     height: auto;
     color: #262626;
@@ -566,9 +621,10 @@ header .wrapper .banner .content-two p{
     align-items: start;
     /* gap: 20px; */
     /* background-color: chocolate; */
-    
+
 }
-#food-section .wrapper .content .cont-wrap{
+
+#food-section .wrapper .content .cont-wrap {
     width: 90%;
     height: 90%;
     display: flex;
@@ -576,24 +632,27 @@ header .wrapper .banner .content-two p{
     justify-content: center;
     gap: 30px;
 }
-#food-section .wrapper .content .head-wrap{
+
+#food-section .wrapper .content .head-wrap {
     width: 100%;
     font-size: 32px;
 }
-#food-section .wrapper .content .para-wrap{
+
+#food-section .wrapper .content .para-wrap {
     width: 90%;
     height: auto;
     text-align: left;
     font-size: 18px;
     line-height: 25px;
 }
-#food-section .wrapper .content a{
+
+#food-section .wrapper .content a {
     text-decoration: none;
     color: #262626;
-   
+
 }
 
- #food-section .wrapper .content .cont-wrap button{
+#food-section .wrapper .content .cont-wrap button {
     width: 150px;
     height: 60px;
     background-color: transparent;
@@ -606,15 +665,17 @@ header .wrapper .banner .content-two p{
     align-items: center;
     gap: 10%;
 }
- #food-section .wrapper .content a button:hover{
+
+#food-section .wrapper .content a button:hover {
     background-color: #2F5B3C;
     border: 1px solid #2F5B3C;
     color: rgb(255, 255, 255);
     transition: 0.4s ease-in-out;
 }
+
 /* food section end */
 /* poster section */
-#post-section{
+#post-section {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -622,20 +683,23 @@ header .wrapper .banner .content-two p{
     align-items: center;
     background-color: #F4F3F1;
 }
-#post-section .wrapper{
+
+#post-section .wrapper {
     width: 95%;
     height: 70%;
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
-#post-section .wrapper .heading{
+
+#post-section .wrapper .heading {
     width: 55%;
     height: 10%;
     font-size: 32px;
     color: #262626;
 }
-#post-section .wrapper .poster{
+
+#post-section .wrapper .poster {
     width: 100%;
     height: 80%;
     white-space: nowrap;
@@ -644,38 +708,45 @@ header .wrapper .banner .content-two p{
     display: flex;
     overflow: hidden;
 }
-#post-section .wrapper .poster .scroll{
+
+#post-section .wrapper .poster .scroll {
     animation: scrollLeft 60s linear infinite;
     display: flex;
     gap: 30px;
-   
+
 }
-#post-section .wrapper .poster .scroll img{
+
+#post-section .wrapper .poster .scroll img {
     transition: transform 0.4s ease-in-out;
 
 }
-#post-section .wrapper .poster .scroll img:hover{
+
+#post-section .wrapper .poster .scroll img:hover {
     transform: scale(1.02);
 }
 
-#post-section .wrapper .poster .scroll img:nth-child(odd){
+#post-section .wrapper .poster .scroll img:nth-child(odd) {
     width: 350px;
     height: 500px;
 }
-#post-section .wrapper .poster .scroll img:nth-child(even){
+
+#post-section .wrapper .poster .scroll img:nth-child(even) {
     width: 400px;
     height: 350px;
 }
+
 @keyframes scrollLeft {
-    from{
+    from {
         transform: translateX(0);
     }
-    to{
+
+    to {
         transform: translateX(-50%);
     }
 }
+
 /* small cards start */
-#small-cards{
+#small-cards {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -683,11 +754,13 @@ header .wrapper .banner .content-two p{
     align-items: center;
     background-color: #F4F3F1;
 }
-#small-cards .wrapper{
+
+#small-cards .wrapper {
     width: 95%;
     height: 80%;
 }
-#small-cards .wrapper .heading{
+
+#small-cards .wrapper .heading {
     width: 55%;
     height: 10%;
     display: flex;
@@ -695,7 +768,8 @@ header .wrapper .banner .content-two p{
     font-size: 32px;
     color: #262626;
 }
-#small-cards .wrapper .cards{
+
+#small-cards .wrapper .cards {
     width: 100%;
     height: 90%;
     display: flex;
@@ -703,7 +777,8 @@ header .wrapper .banner .content-two p{
     align-items: center;
 
 }
-#small-cards .wrapper .cards .small-card-one{
+
+#small-cards .wrapper .cards .small-card-one {
     width: 30%;
     height: 90%;
     background-color: rgb(255, 255, 255);
@@ -712,17 +787,20 @@ header .wrapper .banner .content-two p{
     align-items: center;
     justify-content: center;
 }
-#small-cards .wrapper .cards .small-card-one:hover{
-    box-shadow:   -5px 5px 10px rgba(155, 152, 152, 0.2), 5px 5px 10px rgba(155, 152, 152, 0.2), 0px 5px 10px rgba(155, 152, 152, 0.2);
+
+#small-cards .wrapper .cards .small-card-one:hover {
+    box-shadow: -5px 5px 10px rgba(155, 152, 152, 0.2), 5px 5px 10px rgba(155, 152, 152, 0.2), 0px 5px 10px rgba(155, 152, 152, 0.2);
 
 }
-#small-cards .wrapper .cards .small-card-one a{
+
+#small-cards .wrapper .cards .small-card-one a {
     width: 90%;
     height: 90%;
     text-decoration: none;
     color: black;
 }
-#small-cards .wrapper .cards .small-card-one a .card-wrap{
+
+#small-cards .wrapper .cards .small-card-one a .card-wrap {
     width: 100%;
     height: 100%;
     display: flex;
@@ -730,25 +808,30 @@ header .wrapper .banner .content-two p{
     justify-content: space-evenly;
     /* align-items: center; */
 }
-#small-cards .wrapper .cards .small-card-one a .card-wrap .icon-one{
+
+#small-cards .wrapper .cards .small-card-one a .card-wrap .icon-one {
     width: 15%;
     height: 15%;
 }
-#small-cards .wrapper .cards .small-card-one a .card-wrap .icon-one img{
+
+#small-cards .wrapper .cards .small-card-one a .card-wrap .icon-one img {
     width: 100%;
     height: 100%;
 }
-#small-cards .wrapper .cards .small-card-one a .card-wrap .content{
+
+#small-cards .wrapper .cards .small-card-one a .card-wrap .content {
     width: 100%;
     height: 85%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-#small-cards .wrapper .cards .small-card-one a .card-wrap .content p{
+
+#small-cards .wrapper .cards .small-card-one a .card-wrap .content p {
     line-height: 30px;
 }
-#small-cards .wrapper .cards .small-card-one a .card-wrap button{
+
+#small-cards .wrapper .cards .small-card-one a .card-wrap button {
     width: 200px;
     height: 60px;
     background-color: transparent;
@@ -761,19 +844,22 @@ header .wrapper .banner .content-two p{
     align-items: center;
     gap: 10%;
 }
-#small-cards .wrapper .cards .small-card-one a .card-wrap button:hover{
+
+#small-cards .wrapper .cards .small-card-one a .card-wrap button:hover {
     background-color: #2F5B3C;
     border: 1px solid #2F5B3C;
     color: rgb(255, 255, 255);
     transition: 0.4s ease-in-out;
 }
+
 /* small cards end*/
 /* subscribe section */
-#subscribe{
+#subscribe {
     width: 100%;
     height: 90vh;
 }
-#subscribe .wrapper{
+
+#subscribe .wrapper {
     width: 100%;
     height: 90%;
     background: url("./images_lake/banner.webp");
@@ -785,7 +871,8 @@ header .wrapper .banner .content-two p{
     overflow: hidden;
     position: absolute;
 }
-#subscribe .wrapper .content{
+
+#subscribe .wrapper .content {
     width: 80%;
     height: 50%;
     /* background-color: #2F5B3C; */
@@ -796,18 +883,21 @@ header .wrapper .banner .content-two p{
     position: relative;
     padding: 50px;
 }
-#subscribe .wrapper .content h1{
+
+#subscribe .wrapper .content h1 {
     font-size: 42px;
     color: white;
 }
-#subscribe .wrapper .content p{
+
+#subscribe .wrapper .content p {
     width: 55%;
     font-size: 18px;
     color: white;
     text-align: center;
 }
+
 #subscribe .wrapper .content .subscription-box {
-    width: 100%;        
+    width: 100%;
     height: 40%;
     display: flex;
     justify-content: center;
@@ -824,7 +914,8 @@ header .wrapper .banner .content-two p{
     color: rgb(255, 255, 255);
     font-size: 14px;
 }
-#subscribe .wrapper .content .subscription-box button{
+
+#subscribe .wrapper .content .subscription-box button {
     width: 15%;
     height: 60px;
     background-color: white;
@@ -833,15 +924,17 @@ header .wrapper .banner .content-two p{
     border-radius: 2px;
     font-size: 18px;
 }
-#subscribe .wrapper .content .subscription-box button:hover{
+
+#subscribe .wrapper .content .subscription-box button:hover {
     background-color: black;
     color: white;
     transition: 0.4s ease-in-out;
 
 }
+
 /* subscribe section end*/
 /* final cards*/
-#final-cards{
+#final-cards {
     width: 100%;
     height: 90vh;
     display: flex;
@@ -849,14 +942,16 @@ header .wrapper .banner .content-two p{
     align-items: center;
     background-color: #F4F3F1;
 }
-#final-cards .wrapper{
+
+#final-cards .wrapper {
     width: 95%;
     height: 90%;
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
-#final-cards .wrapper .heading{
+
+#final-cards .wrapper .heading {
     width: 55%;
     height: 10%;
     display: flex;
@@ -864,7 +959,8 @@ header .wrapper .banner .content-two p{
     font-size: 32px;
     color: #262626;
 }
-#final-cards .wrapper .cards{
+
+#final-cards .wrapper .cards {
     width: 100%;
     height: 90%;
     display: flex;
@@ -872,12 +968,14 @@ header .wrapper .banner .content-two p{
     align-items: center;
 
 }
-#final-cards .wrapper .cards a{
+
+#final-cards .wrapper .cards a {
     width: 32%;
     height: 100%;
     text-decoration: none;
 }
-#final-cards .wrapper .cards a .small-card-one{
+
+#final-cards .wrapper .cards a .small-card-one {
     width: 100%;
     height: 100%;
     border-radius: 2px;
@@ -886,82 +984,97 @@ header .wrapper .banner .content-two p{
     gap: 20px;
 }
 
-#final-cards .wrapper .cards a .small-card-one .image-one{
-    width: 500px;
+#final-cards .wrapper .cards a .small-card-one .image-one {
+    width: auto;
     height: 500px;
     overflow: hidden;
 }
-#final-cards .wrapper .cards a .small-card-one .image-one img{
+
+#final-cards .wrapper .cards a .small-card-one .image-one img {
     width: 100%;
     height: 100%;
     transition: transform 0.4s ease-in-out;
 }
-#final-cards .wrapper .cards a .small-card-one .image-one:hover img{
+
+#final-cards .wrapper .cards a .small-card-one .image-one:hover img {
     transform: scale(1.02);
 }
-#final-cards .wrapper .cards a .small-card-one .content{
+
+#final-cards .wrapper .cards a .small-card-one .content {
     width: 100%;
     height: 50%;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-#final-cards .wrapper .cards a .small-card-one .content h1{
-   font-size: 24px;
-   font-weight: 450;
-   color: #262626;
+
+#final-cards .wrapper .cards a .small-card-one .content h1 {
+    font-size: 24px;
+    font-weight: 450;
+    color: #262626;
 }
-#final-cards .wrapper .cards a .small-card-one .content p{
+
+#final-cards .wrapper .cards a .small-card-one .content p {
     line-height: 30px;
     color: #262626;
 }
+
 /* final cards end*/
 /* footer */
-footer{
+footer {
     width: 100%;
     height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-footer .wrapper{
+
+footer .wrapper {
     width: 95%;
     height: 80%;
 }
-footer .wrapper .links{
+
+footer .wrapper .links {
     width: 80%;
     height: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-footer .wrapper .links li{
+
+footer .wrapper .links li {
     list-style: none;
 }
-footer .wrapper .links a{
+
+footer .wrapper .links a {
     text-decoration: none;
     color: #262626;
 }
-footer .wrapper .links li a:hover{
+
+footer .wrapper .links li a:hover {
     color: #2F5B3C;
 
 }
-footer .wrapper .links .to-do{
+
+footer .wrapper .links .to-do {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-footer .wrapper .links .to-do a h2{
+
+footer .wrapper .links .to-do a h2 {
     font-weight: 500;
 
 }
-footer .wrapper .links .to-do ul{
+
+footer .wrapper .links .to-do ul {
     display: flex;
     flex-direction: column;
     gap: 20px;
 
 }
-footer .wrapper .privacy-policy{
+
+footer .wrapper .privacy-policy {
     width: 100%;
     height: 10%;
     display: flex;
@@ -969,14 +1082,17 @@ footer .wrapper .privacy-policy{
     align-items: center;
     color: #262626;
 }
-footer .wrapper .privacy-policy a{
+
+footer .wrapper .privacy-policy a {
     text-decoration: none;
     color: #262626;
 }
-footer .wrapper .privacy-policy a:hover{
+
+footer .wrapper .privacy-policy a:hover {
     color: #2F5B3C;
 }
-footer .wrapper .privacy-policy .icons{
+
+footer .wrapper .privacy-policy .icons {
     width: 20%;
     height: 20%;
     display: flex;
@@ -985,30 +1101,363 @@ footer .wrapper .privacy-policy .icons{
     color: #183321;
     font-size: 24px;
 }
-footer .wrapper .privacy-policy .icons i:hover{
+
+footer .wrapper .privacy-policy .icons i:hover {
     cursor: pointer;
     padding-bottom: 10px;
     transition: 0.2s cubic-bezier(0.6, 0.37, 1, 1);
 }
-footer .wrapper .last{
+
+footer .wrapper .last {
     width: 30%;
     height: 20%;
 }
-footer .wrapper .last ul{
+
+footer .wrapper .last ul {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-footer .wrapper .last ul li{
+
+footer .wrapper .last ul li {
     list-style: none;
 }
-footer .wrapper .last ul li a{
+
+footer .wrapper .last ul li a {
     text-decoration: none;
     color: #262626;
 }
-footer .wrapper .last ul li a:hover{
+
+footer .wrapper .last ul li a:hover {
     color: #2F5B3C;
 }
+
 /* footer end */
+
+/* Responsive styles: tablet and mobile breakpoints */
+/* Make images and video scale */
+img,
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Base font sizing (adjusted per breakpoint below) */
+html {
+    font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+    nav .wrapper {
+        width: 95%;
+    }
+
+    nav ul {
+        width: auto;
+        gap: 12px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    header {
+        height: 70vh;
+    }
+
+    header .wrapper {
+        top: 7%;
+    }
+
+    header .wrapper .banner {
+        gap: 18px;
+    }
+
+    header .wrapper .banner .content-one h1 {
+        font-size: 48px;
+        width: 85%;
+    }
+
+    header .wrapper .banner .content-two p {
+        font-size: 16px;
+    }
+
+    header .video video {
+        object-fit: cover;
+    }
+
+    /* Section typography */
+    #section-one .wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        position: static;
+    }
+
+    #section-one .wrapper .content {
+        width: 100%;
+    }
+
+    #section-one .wrapper .content h1 {
+        font-size: 40px;
+    }
+
+    #section-one .wrapper .content p {
+        font-size: 17px;
+    }
+
+    #section-two .wrapper .heading {
+        font-size: 32px;
+    }
+
+    #section-two .wrapper .image-content {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    #section-two .wrapper .image-content .wrap {
+        width: 48%;
+        height: 320px;
+    }
+
+    /* Card & final images scaling */
+    .small-cards .wrapper .cards .small-card-one {
+        width: 48%;
+    }
+
+    .small-cards .wrapper .cards .small-card-one a .card-wrap .icon-one {
+        width: 12%;
+        height: 12%;
+    }
+
+    #final-cards .wrapper .cards a .small-card-one .image-one {
+        width: 100%;
+        height: 320px;
+    }
+
+    #final-cards .wrapper .cards a .small-card-one .image-one img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+
+    nav .wrapper {
+        padding: 0 12px;
+    }
+
+    /* Show only hamburger (last li) on small screens */
+    nav ul {
+        width: auto;
+        justify-content: flex-end;
+    }
+
+    nav ul li:not(:last-child) {
+        display: none;
+    }
+
+    nav ul li img {
+        width: 28px;
+        height: 28px;
+    }
+
+    header {
+        height: 60vh;
+    }
+
+    header .wrapper .banner {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    header .wrapper .banner .content-one,
+    header .wrapper .banner .content-two {
+        width: 100%;
+    }
+
+    header .wrapper .banner .content-one h1 {
+        font-size: 34px;
+    }
+
+    header .wrapper .banner .content-two p {
+        font-size: 15px;
+    }
+
+    /* Section and paragraph adjustments */
+    #section-one .wrapper .content h1 {
+        font-size: 30px;
+    }
+
+    #section-one .wrapper .content p,
+    #section-three .wrapper .content .para-wrap,
+    #food-section .wrapper .content .para-wrap {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    /* Cards stack vertically */
+    #section-two{
+        height: auto;
+    }
+    #section-two .wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    #section-two .wrapper .heading {
+        width: 80%;
+        font-size: 24px;
+    }
+    #section-two .wrapper .image-content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #section-two .wrapper .image-content .wrap {
+        width: 80%;
+        height: 500px;
+    }
+
+    #section-two .wrapper .image-content .card-one,
+    #section-two .wrapper .image-content .card-two,
+    #section-two .wrapper .image-content .card-three {
+        height: 100%;
+        background-size: cover;
+    }
+
+    /* Poster: disable marquee animation and allow horizontal scroll */
+    #post-section .wrapper .poster {
+        overflow-x: auto;
+    }
+
+    #post-section .wrapper .poster .scroll {
+        animation: none;
+        display: flex;
+        gap: 16px;
+    }
+
+    #post-section .wrapper .poster .scroll img {
+        width: 220px;
+        height: auto;
+    }
+
+    #small-cards .wrapper .cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .small-cards .wrapper .cards .small-card-one {
+        width: 100%;
+        height: auto;
+        padding: 18px;
+    }
+
+    .small-cards .wrapper .cards .small-card-one a .card-wrap .icon-one {
+        width: 18%;
+        height: 18%;
+    }
+
+    #final-cards .wrapper .cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #final-cards .wrapper .cards a {
+        width: 100%;
+        height: auto;
+    }
+
+    #final-cards .wrapper .cards a .small-card-one .image-one {
+        height: 240px;
+    }
+
+    /* Subscribe wrapper was absolute; make it relative on small screens */
+    #subscribe .wrapper {
+        position: relative;
+        padding: 40px 0;
+    }
+
+    #subscribe .wrapper .content {
+        padding: 20px;
+        width: 100%;
+    }
+
+    #subscribe .wrapper .content h1 {
+        font-size: 30px;
+    }
+
+    #subscribe .wrapper .content p {
+        font-size: 15px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+
+    header {
+        height: 50vh;
+    }
+
+    header .wrapper .banner .content-one h1 {
+        font-size: 26px;
+    }
+
+    nav ul li img {
+        width: 24px;
+        height: 24px;
+    }
+
+    #section-one .wrapper .content h1 {
+        font-size: 24px;
+    }
+
+    #section-one .wrapper .image img,
+    #section-three .wrapper .image img,
+    #food-section .wrapper .image img {
+        object-fit: cover;
+    }
+
+    #section-two .wrapper .image-content .wrap {
+        height: 200px;
+    }
+
+    #post-section .wrapper .poster .scroll img {
+        width: 180px;
+    }
+
+    .small-card-one a .card-wrap .content p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    #final-cards .wrapper .cards a .small-card-one .image-one {
+        height: auto;
+    }
+
+    #final-cards .wrapper .cards a .small-card-one .content h1 {
+        font-size: 20px;
+    }
+
+    /* Subscribe adjustments for very small screens */
+    #subscribe .wrapper .content .subscription-box input {
+        width: 60%;
+    }
+
+    #subscribe .wrapper .content .subscription-box button {
+        width: 35%;
+    }
+}
